@@ -590,7 +590,7 @@
         </table>
       </section>
       <div class="line"></div>
-<section id="webshop" class="webshop-section">
+      <section id="webshop" class="webshop-section">
         <h2 class="webshop-h2">Webshop</h2>
         <div class="webshop-banner">
           <img
@@ -604,10 +604,32 @@
         <p class="webshop-p">Choose your favorite product.</p>
         <button class="webshop-btn" id="openButton">Shop Now!</button>
       </section>
-      as
-      <section class="form"></section>
+      <div class="line"></div>
+      <!-------------------------------FORM------------------------------------>
+      <section class="form">
+        <h2 class="form-h2">Prize draw</h2>
+        <form action="https://formspree.io/f/mbjnrdkz" method="POST">
+          <label for="firstName">Keresztnév:</label>
+          <input type="text" id="firstName" name="firstName" required placeholder="Keresztnev"/>
+          <label for="favoriteBrand">Kedvenc Bicikli Márka:</label>
+          <input type="text" id="favoriteBrand" name="favoriteBrand" required placeholder="kedvenc marka" />
+          <label for="favoriteStyle">Kedvenc Bicikli Stílus:</label>
+          <label for="money">Evi mennyit koltesz biciklire</label>
+          <input type="text" id="money" name="money" required placeholder="mennyit koltesz" />
+          <select id="favoriteStyle" name="favoriteStyle" required>
+            <option value="slopestyle">Slopestyle</option>
+            <option value="dirtjump">Dirt Jump</option>
+            <option value="freeride">Freeride</option>
+            <option value="downhill">Downhill</option>
+            <option value="bmx">BMX</option>
+            <option value="road">Road</option>
+          </select>
+          <textarea name="Kedvenc verseny" id="verseny" cols="30" rows="10" placeholder="verseny kritika"></textarea>
+          <button type="submit">Elküld</button>
+        </form>
+      </section>
     </main>
-      
+
     <footer>
       <div class="footer-container">
         <h2 class="sponsor-h2">Sponsors</h2>
