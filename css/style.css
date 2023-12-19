@@ -19,7 +19,7 @@ body {
   overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-/*scrollbar*/
+/*----------------SCROLLBAR----------------------------------------------*/
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -37,11 +37,11 @@ body {
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #1C5472;
+  background-color: white;
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #1C5472;
+  background-color: white;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -50,11 +50,11 @@ body {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #97EC20;
+  background-color: white;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #9CF521;
+  background-color: white;
 }
 
 /*----------------------------------------*/
@@ -80,7 +80,7 @@ img {
 
 :root{
   --elso:#153B50;
-  --elso-rgba:#153b5077;
+  --elso-rgba:#153b50a6;
   --masodik:#A1FC22;
   --harmadik:#F9F9F9;  
   --negyedik:#1c5472;
@@ -92,7 +92,7 @@ img {
 
 
 header {
-    background-color: var(--elso);
+    background-color: var(--elso-rgba);
     position: fixed;
     width: 100%;
     display: flex;
@@ -100,6 +100,7 @@ header {
     justify-content:space-between;
     height: 5rem;
     z-index: 1;
+
 }
 
 
@@ -201,7 +202,7 @@ header ul {
   width: 100%;
   height: 0;
   overflow: hidden;
-  background-color: var(--negyedik);
+  background-color: var(--elso-rgba);
   z-index: 3;
   transition: height 0.7s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
@@ -835,6 +836,7 @@ tr {
   margin: 1rem 0;
   text-align:left; /* Középre igazítás */
   width: 100%;
+  color: var(--harmadik);
 }
 
 
@@ -869,5 +871,34 @@ tr {
 
 .section-form form button:hover {
   border: 3px solid var(--harmadik);
+}
+
+/*----------------------------FOOTER--------------------*/
+
+footer {
+  text-align: center; /* Középre igazítás */
+}
+
+.sponsor-h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px  rgb(167, 164, 164);
+  margin: 2rem;
+}
+
+.footer-container {
+  display: inline-block; /* Az inline-block segít a középre igazításban */
+  margin: 0 4rem; /* Változtathatod az értéket, hogy a listák közötti helyet szabályozd */
+  vertical-align: top; /* A lista tetejét illessze az összehasonlításhoz */
+}
+
+.sponsor-ul,
+.sponsor-ul-2 {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.copy {
+  margin:2rem 0; /* Változtathatod az értéket a copyright szöveg és a listák közötti helyhez */
 }
 
