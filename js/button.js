@@ -1,5 +1,6 @@
-export function openWebshop() {
-  document.getElementById('openButton').addEventListener('click', function() {
-    window.location.href = './Bootstrap/index.html';
-  });
+
+function openWebshop() {
+  window.location.href = './Bootstrap/index.html';
 }
+
+document.getElementById('openButton').addEventListener('click', openWebshop);

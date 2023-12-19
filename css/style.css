@@ -870,7 +870,7 @@ tr {
 }
 
 .section-form form button:hover {
-  border: 3px solid var(--harmadik);
+  border: 3px solid var(--border);
 }
 
 /*hover*/
@@ -929,6 +929,24 @@ footer {
 
 .copy {
   margin:2rem 0; /* Változtathatod az értéket a copyright szöveg és a listák közötti helyhez */
+}
+
+/*soc*/
+
+.soc-container_footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--rank-row-2);
+  padding: 2rem; /* Opcionális padding a terület körül */
+  width: 100%; /* Kitölti a szülő elemet a vízszintes irányban */
+  height: 50px; /* A megfelelő magasság beállítása (igazítsd az igényeidhez) */
+}
+
+.icon-img_footer {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
