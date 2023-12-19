@@ -87,6 +87,7 @@ img {
   --negyedik-rgba:#1c5472d2;
   --rank-row-1:#F1E9DA;
   --rank-row-2:#7698B3;
+  --border:yellow;
 }
 /*--------------------------------NAV----------------------------------------*/
 
@@ -100,6 +101,7 @@ header {
     justify-content:space-between;
     height: 5rem;
     z-index: 1;
+   
 
 }
 
@@ -234,8 +236,6 @@ header ul {
 .nav-checkbox:not(:checked) ~ .nav-list li {
     opacity: 0;
  }  
-
-
 
 
 
@@ -873,6 +873,35 @@ tr {
   border: 3px solid var(--harmadik);
 }
 
+/*hover*/
+.section-form form input,
+.section-form form select,
+.section-form form textarea {
+  padding: 10px;
+  border: 5px solid transparent; /* Átlátszó keret alapértelmezésben */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: border-color 0.3s ease-in-out; /* Átmenet a keretszín megváltoztatásához */
+}
+
+/* Keret színének beállítása, amikor ráviszed az egeret */
+.section-form form input:hover,
+.section-form form select:hover,
+.section-form form textarea:hover {
+  border-color: var(--border);
+}
+
+/* Keret színének beállítása, amikor belekattintasz */
+.section-form form input:focus,
+.section-form form select:focus,
+.section-form form textarea:focus {
+  border-color: var(--border);
+  outline: none;
+  box-shadow: 0 0 5px var(--border); /* Árnyék a fókuszban */
+}
+
+
+
 /*----------------------------FOOTER--------------------*/
 
 footer {
@@ -901,4 +930,5 @@ footer {
 .copy {
   margin:2rem 0; /* Változtathatod az értéket a copyright szöveg és a listák közötti helyhez */
 }
+
 
