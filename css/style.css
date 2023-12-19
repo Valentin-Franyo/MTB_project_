@@ -80,9 +80,11 @@ img {
 
 :root{
   --elso:#153B50;
+  --elso-rgba:#153b5077;
   --masodik:#A1FC22;
   --harmadik:#F9F9F9;  
   --negyedik:#1c5472;
+  --negyedik-rgba:#1c5472d2;
   --rank-row-1:#F1E9DA;
   --rank-row-2:#7698B3;
 }
@@ -700,7 +702,7 @@ tr {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  text-align: center;q
+  text-align: center;
 }
 
 .webshop-banner {
@@ -735,32 +737,62 @@ tr {
 
 
 /*-----------------------FORM-------------------------------*/
+.form-div {
+  display: flex;
+  flex-direction: column; /* Ez a módosítás */
+  align-items: center; /* Ez a módosítás */
+  text-align: center;
+  justify-content: center;
+}
 
-/*---------------------ŰRLAP STÍLUS---------------------------*/
+.form-h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px rgb(167, 164, 164);
+  margin: 2rem;
+  width: 100%; /* Ez a módosítás */
+}
+
+.form-p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .section-form {
   position: relative;
   min-height: 100vh;
   max-width: 100% !important;
-  background-color: #161623;
+  background-color: var(--negyedik-rgba); /* Kódsos háttér */
   overflow: hidden;
-  display: grid;
-  place-items: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 30px rgba(2, 2, 2, 0.774);
   border-radius: 15px;
   margin: 20px;
   padding: 20px;
 }
 
-.section-form::before,
+/*gömb1*/
+.section-form::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background:var(--elso); /* Ködös háttér színe */
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+/*gömb2*/
 .section-form::after {
   content: "";
   position: absolute;
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: #7B66FF;
+  background:var(--masodik); /* Másik szín */
   animation: move-up6 2s ease-in infinite alternate-reverse;
 }
+
 
 .section-form::before {
   top: -100px;
@@ -774,18 +806,37 @@ tr {
 
 @keyframes move-up6 {
   to {
-      transform: translateY(-50px);
+    transform: translateY(-50px);
   }
 }
 
 /* ŰRLAP ELEMEK STÍLUSA */
 
 .section-form form {
-  width: 100%;
+  position: relative;
+  z-index: 2; /* Űrlapot előtérbe hozza a háttérrel szemben */
+  width: 80%; /* A teljes szélesség 80%-a */
+  max-width: 400px; /* Maximális szélesség */
   height: 100%;
   outline: none;
-  border: none;
+  border: 3px  solid rgba(0, 0, 0, 0.349);
+  background-color: rgba(240, 238, 238, 0.137); /* Átlátszó, halvány háttér */
+  border-radius: 10px; /* Kerekített sarkok */
+  backdrop-filter: blur(30px); /* Ködhatás a háttéren */
+  margin: 0 auto; /* Középre igazítás marginnal */
+  padding: 20px; /* Belső tér margókkal */
+  opacity: 0.7;
+
 }
+
+.section-form form label {
+  font-size: 1.5rem;
+  display: block;
+  margin: 1rem 0;
+  text-align:left; /* Középre igazítás */
+  width: 100%;
+}
+
 
 .section-form form label,
 .section-form form select,
@@ -803,6 +854,7 @@ tr {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95); /* Átlátszó, halvány háttér */
 }
 
 .section-form form textarea {
@@ -810,17 +862,12 @@ tr {
 }
 
 .section-form form button {
-  background-color: #1C5472;
+  background-color:var(--elso);
   color: #fff;
   cursor: pointer;
 }
 
 .section-form form button:hover {
-  background-color: #153B50;
+  border: 3px solid var(--harmadik);
 }
 
-@media (max-width: 600px) {
-  .section-form {
-      margin: 10px;
-  }
-}

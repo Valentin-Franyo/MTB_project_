@@ -10,14 +10,14 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <!--font-->
+    <!--font----------------------------------------------------------------------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
       rel="stylesheet"
     />
-    <!--font awesome-->
+    <!--font awesome----------------------------------------------------------------------------------------------------------------------------------->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -27,6 +27,7 @@
     />
   </head>
   <body>
+    <!--HEADER---------------------------------------------------------------------------------------------------------------------------------------->
     <header>
       <a href="./index.html" class="logo-short">
         <h2 class="logotext-short">EX</h2>
@@ -36,7 +37,7 @@
       </a>
 
       <div class="soc-container">
-        <img class="icon-img" src="./assets/svg/instagram (1).svg" alt="" />
+        <img class="icon-img" src="./assets/svg/instagram_(1).svg" alt="" />
         <img class="icon-img" src="./assets/svg/twitter.svg" alt="" />
         <img class="icon-img" src="./assets/svg/facebook.svg" alt="" />
       </div>
@@ -58,8 +59,9 @@
         </ul>
       </nav>
     </header>
-
+    <!--.............................................................................-->
     <main>
+      <!--CAROUSEL-------------------------------------------------------------------------------------------------------->
       <section class="carousel scroll">
         <div class="container">
           <input type="radio" name="radio" id="slider-radio1" checked />
@@ -100,7 +102,9 @@
           </div>
         </div>
       </section>
+      <!--.........................................................................................................................................-->
       <div class="line"></div>
+      <!--NEWS---------------------------------------------------------------------------------------------------------------------------------------------------->
       <section id="news" class="news-section">
         <h2 class="news-h2">News</h2>
         <div class="news-card">
@@ -250,12 +254,12 @@
           </div>
         </div>
       </section>
+      <!--......................................................................................................................................-->
       <div class="line"></div>
+      <!--EVENTS---------------------------------------------------------------------------------------------------------------------------------------------->
       <section id="events" class="events-section">
         <h2 class="events-h2">Events</h2>
-
-        <!--------------event cards----------------------->
-
+        <!--card-------->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -293,7 +297,7 @@
             </div>
           </div>
         </div>
-
+        <!--...............................-->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -331,7 +335,7 @@
             </div>
           </div>
         </div>
-
+        <!--................-->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -369,7 +373,7 @@
             </div>
           </div>
         </div>
-
+        <!--........-->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -407,7 +411,7 @@
             </div>
           </div>
         </div>
-
+        <!--..........-->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -445,7 +449,7 @@
             </div>
           </div>
         </div>
-
+        <!--..............-->
         <div class="event-container">
           <div class="event-item-container">
             <div class="event-img-container">
@@ -483,10 +487,10 @@
             </div>
           </div>
         </div>
-
-        <!---------------------------------------------->
       </section>
+      <!--.............................................................................................................................................-->
       <div class="line"></div>
+      <!--TOPLIST------------------------------------------------------------------------------------------------------------------------>
       <section id="toplist" class="toplist-section">
         <h2 class="toplist-h2">Toplist</h2>
         <table class="toplist-table">
@@ -589,14 +593,13 @@
           </tr>
         </table>
       </section>
+      <!--.....................................................................................................-->
       <div class="line"></div>
+      <!---WEBSHOP------------------------------------------------------------------------------------------------->
       <section id="webshop" class="webshop-section">
         <h2 class="webshop-h2">Webshop</h2>
         <div class="webshop-banner">
-          <img
-            src="./assets/shop_Banner/Képernyőkép 2023-12-15 030428.png"
-            alt=""
-          />
+          <img src="./assets/shop_Banner/banner.png" alt="" />
         </div>
         <div class="webshop-img">
           <img src="" alt="" />
@@ -604,19 +607,46 @@
         <p class="webshop-p">Choose your favorite product.</p>
         <button class="webshop-btn" id="openButton">Shop Now!</button>
       </section>
+      <!--.......................................-->
       <div class="line"></div>
-      <!-------------------------------FORM------------------------------------>
-      <section class="section-form">
+      <!-------------------------------FORM----------------------------------------------------------------------------->
+      <div class="form-div">
         <h2 class="form-h2">Prize draw</h2>
+        <p class="form-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis
+          cupiditate mollitia accusantium impedit beatae? Omnis dicta voluptas
+          tempore labore.
+        </p>
+      </div>
+
+      <section class="section-form">
         <form action="https://formspree.io/f/mbjnrdkz" method="POST">
           <label for="firstName">Keresztnév:</label>
-          <input type="text" id="firstName" name="firstName" required placeholder="Keresztnev"/>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="Keresztnev"
+          />
           <label for="favoriteBrand">Kedvenc Bicikli Márka:</label>
-          <input type="text" id="favoriteBrand" name="favoriteBrand" required placeholder="kedvenc marka" />
-          
+          <input
+            type="text"
+            id="favoriteBrand"
+            name="favoriteBrand"
+            required
+            placeholder="kedvenc marka"
+          />
+
           <label for="money">Evi mennyit koltesz biciklire</label>
-          <input type="text" id="money" name="money" required placeholder="mennyit koltesz" />
-         <label for="favoriteStyle">Kedvenc Bicikli Stílus:</label>
+          <input
+            type="text"
+            id="money"
+            name="money"
+            required
+            placeholder="mennyit koltesz"
+          />
+          <label for="favoriteStyle">Kedvenc Bicikli Stílus:</label>
           <select id="favoriteStyle" name="favoriteStyle" required>
             <option value="slopestyle">Slopestyle</option>
             <option value="dirtjump">Dirt Jump</option>
@@ -625,10 +655,18 @@
             <option value="bmx">BMX</option>
             <option value="road">Road</option>
           </select>
-          <textarea name="Kedvenc verseny" id="verseny" cols="30" rows="10" placeholder="verseny kritika"></textarea>
+          <label for="Kedvencverseny">Legjobb elmeny</label>
+          <textarea
+            name="Kedvenc verseny"
+            id="verseny"
+            cols="30"
+            rows="10"
+            placeholder="verseny kritika"
+          ></textarea>
           <button type="submit">Elküld</button>
         </form>
       </section>
+      <!--................................................-->>
     </main>
 
     <footer>
